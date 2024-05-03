@@ -3,9 +3,6 @@ import { sepolia } from "viem/chains";
 import "viem/window";
 
 export async function ConnectWalletClient() {
-  // Check for window.ethereum
-  // window.ethereum is an object provided by MetaMask or other web3 wallets
-  let transport;
   // Declare a Wallet Client
   // This creates a wallet client using the Sepolia chain and the custom transport
   const walletClient = createWalletClient({
